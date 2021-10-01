@@ -5,7 +5,9 @@ body{
 }
 .container{
     text-align: center;
+    padding: 1rem
 }
 label{
     display: block;
+    padding: 0.5rem;
 }
