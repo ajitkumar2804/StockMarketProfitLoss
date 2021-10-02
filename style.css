@@ -3,11 +3,23 @@ body{
     background-color: #D1D5DB;
 
 }
+.main{
+   border: solid black;
+   margin: 0rem 7rem;
+   border-radius: 2rem;
+}
 .container{
     text-align: center;
     padding: 1rem
 }
 label{
     display: block;
+    padding: 0.5rem;
+    font-weight: bold;
+}
+button{
+    background-color: #374151 ;
+    width: 8rem;
+    color: white;
     padding: 0.5rem;
 }
