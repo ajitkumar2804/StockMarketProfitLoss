@@ -7,11 +7,13 @@ const message = document.querySelector("#finalMessage");
 btnCheck.addEventListener("click", stockcalHandler);
 
 function stockcalHandler() {
+    if(initialPrice.value <0 || quantity.value <0 || currentPrice.value <0){
+        setMessage("Please Enter the Positve value");
+    }else{
     var ip = initialPrice.value * quantity.value ;
     var cp = currentPrice.value * quantity.value;
-
-
     calProfitAndLoss(ip, cp);
+}
 }
 function calProfitAndLoss(initial, current) {
     if (initial > current) {
